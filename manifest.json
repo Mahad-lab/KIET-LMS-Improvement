@@ -1,0 +1,26 @@
+{
+
+    "manifest_version": 2,
+    "name": "KIET 2.0",
+    "version": "1.0",
+
+    "description": "Making KIET LMS better.",
+
+    "icons": {
+        "32": "icons/icon32.png",
+        "38": "icons/icon38.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+
+    "content_scripts": [{
+        "matches": ["*://lms.kiet.edu.pk/*"],
+        "js": ["index.js"],
+        "css": ["kiet.css"]
+    }],
+
+    "web_accessible_resources": [
+        "scripts/*",
+        "styles/*"
+    ]
+}
